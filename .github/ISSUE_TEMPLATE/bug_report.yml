@@ -1,0 +1,33 @@
+name: Bug report
+description: Something is not working in PixSahi
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Please use a synthetic sample. Do not attach personal photos, signatures, or identity documents to a public issue."
+  - type: input
+    id: version
+    attributes:
+      label: PixSahi version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and display scaling
+      placeholder: "Windows 11, 125% scaling"
+    validations:
+      required: true
+  - type: input
+    id: output
+    attributes:
+      label: Image settings
+      placeholder: "Input PNG, output JPG, 200 x 230 px, 50 KB, crop to fill"
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include steps, expected behavior, and any error text. Use a non-sensitive screenshot if useful.
+    validations:
+      required: true

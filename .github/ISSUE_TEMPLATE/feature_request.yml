@@ -1,0 +1,12 @@
+name: Feature idea
+description: Suggest an improvement to PixSahi
+title: "[Idea]: "
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to do?
+      description: Describe the use case and the change that would help.
+    validations:
+      required: true
+

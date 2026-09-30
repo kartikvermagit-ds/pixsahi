@@ -1,0 +1,8 @@
+/dist/
+/artifacts/
+/.vs/
+*.user
+*.suo
+*.pdb
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,66 @@
+PixSahi - MAKE YOUR PHOTO FIT
+Version 1.0.0 | Windows desktop app | Simple English interface
+
+QUICK START
+1. Open PixSahi.exe. No installation or administrator access is needed.
+2. Click Add image, drag one image into the window, or use Ctrl+O.
+3. Choose Photo or Signature as a starting point.
+4. Enter the exact width, height, and maximum KB required by your form.
+5. Choose JPG or PNG. Frame the image using the options below.
+6. Click Prepare image. Check the final preview, dimensions, and file size.
+7. Click Save image and choose a new filename.
+
+HINDI QUICK START
+PixSahi.exe kholo > Add image > dimensions aur KB limit bharo >
+Prepare image > preview dekho > Save image.
+
+CROP AND FIT
+- Crop to fill: fills the requested shape. Drag the left preview to reposition
+  the image; use Zoom for a closer crop. Reset crop returns to the center.
+- Fit entire image: keeps everything visible and adds white margins if needed.
+  This is the default for signatures. Zoom is disabled in this mode.
+- Rotate 90: rotates the source clockwise within the app. It does not edit the
+  original file. Phone photo orientation is also handled automatically.
+
+FILE SIZE AND QUALITY
+- KB uses 1,000 bytes. Exact byte counts appear below the final preview.
+- JPG quality is adjusted to fit the limit while keeping your chosen dimensions.
+- PNG is lossless after resizing and may be larger. If it cannot fit, PixSahi
+  reports that instead of silently changing the output dimensions.
+- If a limit is impossible, increase the KB limit or reduce the dimensions.
+- The saved file uses exactly the bytes shown in the final preview.
+- The app supports a maximum size, not a minimum file-size requirement.
+- Photo/signature starting values are examples, not official portal presets.
+  Follow your form's current rules, including background, face framing, DPI,
+  minimum size, and allowed formats. Portal acceptance is not guaranteed.
+- Image dimensions are in pixels. Outputs use 96 DPI metadata; DPI is not
+  configurable in this version.
+
+SUPPORTED FILES
+Input: JPG/JPEG, PNG, BMP; up to 40 MB and 40 megapixels, max 20,000 px per side.
+Output: JPG/JPEG or PNG, 16-4,000 px per side, maximum limit 1-20,000 KB.
+HEIC, WebP, PDF, TIFF, and GIF input are not supported in this version.
+Transparency becomes white. Output is redrawn without source EXIF/GPS metadata.
+
+PRIVACY AND YOUR ORIGINAL
+All processing happens locally. No uploads, accounts, analytics, or network
+connection are used by the app. Your original is not edited; saving over the
+source path is blocked. An existing output is replaced only after the standard
+Windows overwrite confirmation.
+
+REQUIREMENTS
+Designed for Windows 10/11 with .NET Framework 4.5 or newer. No Python, Node.js,
+or .NET SDK is needed to run it. This is a custom unsigned executable.
+
+UNINSTALL
+Close PixSahi and delete its folder. It creates no startup entries, background
+service, or registry preferences.
+
+SOURCE AND VERIFICATION
+Complete source code, guides, releases, and support:
+https://github.com/kartikvermagit-ds/pixsahi
+From a source checkout: .\scripts\build.ps1 -Test -Package
+Tests generate synthetic images in the checkout's artifacts folder; they do not
+use personal photos. Validation.txt, when included, records the build's checks.
+The README screenshot uses a synthetic demonstration signature.
+Released under the MIT license included in this package.
